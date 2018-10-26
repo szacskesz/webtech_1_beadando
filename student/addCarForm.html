@@ -1,0 +1,55 @@
+<form method="post" action="/addCar" id="add-car-form">
+    <div class="form-row">
+		<label for="manufacturer">Manufacturer:</label>
+        <div class="form-row-content">
+            <select name="manufacturer" required></select>
+        </div>
+    </div>
+
+    <div class="form-row">
+		<label for="name">Model:</label>
+        <div class="form-row-content">
+            <input type="text" name="name" value="" placeholder="Type the car's model.." required>
+        </div>
+    </div>
+
+    <div class="form-row">
+		<label for="year">Year:</label>
+        <div class="form-row-content">
+            <input type="number" name="year" min="1000" max="" placeholder="Type the car's making year.." required>
+        </div>
+    </div>
+    
+    <div class="form-row">
+		<label for="horsepower">Horsepower:</label>
+        <div class="form-row-content">
+            <input type="number" name="horsepower" min="0" placeholder="Type the car's horsepower.." required>
+        </div>
+    </div>
+
+    <div class="form-row">
+		<label for="consumption">Consumption:</label>
+        <div class="form-row-content">
+            <input type="text" name="consumption" min="0" placeholder="Type the car's consumption.." required>
+        </div>
+    </div>
+
+    <div class="form-row">
+		<label for="color">Color:</label>
+        <div class="form-row-content">
+            <input type="text" name="color" value="" placeholder="Type the car's color.." required>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <label for="available">Available amount:</label>
+        <div class="form-row-content">
+            <input type="number" name="available" min="0" placeholder="Type the available car amount.." required>
+        </div>
+    </div>
+
+    <div class="form-action-row">
+		<input class="form-button" name="back" type="button" value="Back">
+		<input class="form-button right" name="submit" type="submit" value="Submit">
+    </div>
+</form>

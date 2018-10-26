@@ -1,0 +1,187 @@
+/* GENERAL */
+body {
+    margin:0;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1 span {
+    color: #007bff;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* /GENERAL */
+
+/* NAVBAR */
+#header #nav-bar .nav-item a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    line-height: 32px;
+}
+
+#header #nav-bar .nav-banner {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    padding: 17px 40px 17px 17px;
+    text-decoration: bold;
+    line-height: 26px;
+}
+
+#header #nav-bar .nav-item:not(.active) a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#header #nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #007bff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+#container {
+    padding:20px;
+    margin-top:60px;
+}
+
+#header #nav-bar .nav-item.active a {
+    color: #007bff;
+    background-color: white;
+}
+/* /NAVBAR */
+
+/* MANUFACTURER_LIST CARS_LIST */
+.list-item {
+	border-radius: 5px;
+    box-shadow: 0px 4px 16px 1px rgba(0,0,0,0.3);
+    width: 350px;
+    background-color:white;
+    padding: 0;
+    margin: 10px;
+    display: inline-block;
+}
+
+.list-item-header {
+    padding: 2px;
+	background-color:#007bff;
+	border-radius: 5px 5px 0 0;
+}
+
+.list-item-header img {
+    width: 346px;
+    height: 346px;
+	border-radius: 5px 5px 0 0;
+	display: block;
+}
+
+.list-item-content {
+	padding: 16px;
+}
+
+.list-item-content table {
+	width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+.list-item-content table td, table th {
+    padding: 7px;
+    vertical-align: top;
+}
+.list-item-content table th {
+	width: 40%;
+}
+
+#manufacturers-container .list-item-action{
+    height: 474px;
+}
+
+#cars-container .list-item-action{
+    height: 602px;
+}
+
+.list-item-action {
+	border-radius: 5px;
+	border: 2px solid #007bff;
+    box-shadow: 0px 4px 16px 1px rgba(0,0,0,0.3);
+    width: 346px;
+	height: 474;
+    background-color: white;
+    padding: 0;
+    margin: 10px;
+    display: inline-block;
+}
+
+.list-item-action table{
+	width: 100%;
+	height: 100%;
+}
+
+.list-item-action table td{
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+.list-item-action:hover{
+	background-color: #007bff;
+	cursor: pointer;
+}
+/* /MANUFACTURER_LIST /CARS_LIST */
+
+/* MANUFACTURER_FORM CAR_FORM */
+form input[type=text], form select, form input[type=date], form input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-button {
+	display: inline-block;
+    width: 49%;
+	background-color: white;
+	color: #007bff;
+	font-weight: bold;
+	font-size: 20px;
+	border: 2px solid #007bff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-button.right {
+    float: right;
+}
+
+.form-button:hover {
+	background-color: #007bff;
+	color: white;
+}
+
+form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+/* /MANUFACTURER_FORM /CAR_FORM */
