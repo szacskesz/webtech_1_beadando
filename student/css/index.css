@@ -67,6 +67,16 @@ h1 span {
 }
 /* /NAVBAR */
 
+/* HOME_PAGE */
+table.authors-table {
+    text-align: left;
+}
+
+table.authors-table th {
+    padding-left: 0;
+}
+/* /HOME_PAGE */
+
 /* MANUFACTURER_LIST CARS_LIST */
 .list-item {
 	border-radius: 5px;
@@ -145,7 +155,7 @@ h1 span {
 }
 /* /MANUFACTURER_LIST /CARS_LIST */
 
-/* MANUFACTURER_FORM CAR_FORM */
+/* MANUFACTURER_FORM, CAR_FORM */
 form input[type=text], form select, form input[type=date], form input[type=number] {
     width: 100%;
     padding: 12px 20px;
@@ -184,4 +194,4 @@ form {
     background-color: #f2f2f2;
     padding: 20px;
 }
-/* /MANUFACTURER_FORM /CAR_FORM */
+/* /MANUFACTURER_FORM, /CAR_FORM */
