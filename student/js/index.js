@@ -211,14 +211,14 @@ $(document).ready(function () {
                     type: 'post',
                     data: $(this).serialize(),
                     success: function () {
-                        loadManufacturersListPage()
+                        loadManufacturersListPage();
                     },
                     error: function (jqXhr) {
                         if (jqXhr.status === 409) {
-                            alert("There is already a manufacturer in the database with that name")
+                            alert("There is already a manufacturer in the database with that name");
                         } else {
                             alert("Something went wrong, see log for more information");
-                            console.log(jqXhr)
+                            console.log(jqXhr);
                         }
                     }
                 });
@@ -234,8 +234,8 @@ $(document).ready(function () {
                 new Date().toISOString().split("T")[0]
             );
 
-            $("#manufacturers-container").append(form)
-        }, 'html')
+            $("#manufacturers-container").append(form);
+        }, 'html');
     }
 
     // Load add cars form
@@ -252,14 +252,14 @@ $(document).ready(function () {
                     type: 'post',
                     data: $(this).serialize(),
                     success: function () {
-                        loadCarsListPage()
+                        loadCarsListPage();
                     },
                     error: function (jqXhr) {
                         if (jqXhr.status === 409) {
                             alert("There is already a car in the database with that model");
                         } else {
                             alert("Something went wrong, see log for more information");
-                            console.log(jqXhr)
+                            console.log(jqXhr);
                         }
                     }
                 });
